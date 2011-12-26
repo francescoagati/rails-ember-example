@@ -1,0 +1,27 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1324931252.6846:@value{	I"length:EFi#I"digest;
+F"%12dfb5a6e8731fd4457aedd4a042b7c1I"source;
+FI"#(function() {
+
+  this.Home = function() {
+    var fullname, view;
+    fullname = function() {
+      return this.get("firstName") + " " + this.get("lastName");
+    };
+    this.App = Ember.Application.create({});
+    this.App.personController = Ember.Object.create({
+      firstName: "Alan",
+      lastName: "Turing",
+      fullName: fullname.property("firstName", "lastName"),
+      didRSVP: false
+    });
+    view = Ember.View.create({
+      templateName: "rsvp",
+      name: "Bob"
+    });
+    return view.appendTo("#pippa");
+  };
+
+}).call(this);
+;
+FI"_version;
+F"%0c1e71c51832ab8764e6ca54a98c138e

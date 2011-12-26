@@ -1,0 +1,26 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1324927184.000932:@value{	I"length:EFi¢I"digest;
+F"%5ccccbf614747703b0c93ddc93261bc3I"source;
+FI"¢(function() {
+
+Ember.I18n = I18n;
+
+Ember.String.loc = function(scope, options) {
+  return Ember.I18n.translate(scope, options);
+};
+
+Ember.STRINGS = Ember.I18n.translations;
+
+Ember.Handlebars.registerHelper('loc', function(property) {
+  return Ember.String.loc(property);
+});
+
+if (Ember.EXTEND_PROTOTYPES) {
+  String.prototype.loc = function(options) {
+    return Ember.String.loc(String(this), options);
+  };
+}
+
+})();
+;
+FI"_version;
+F"%ca20a748f2b6569629e83579c6a41574

@@ -1,0 +1,119 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1324927596.529718:@value{	I"length:EFiaI"digest;
+F"%0692d4df8c6402b7873aed0a5dcd7fdcI"source;
+FI"aEmber.TEMPLATES["rsvp"] = Ember.Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  helpers = helpers || Ember.Handlebars.helpers;
+  var buffer = '', stack1, stack2, stack3, stack4, tmp1, self=this, functionType="function", helperMissing=helpers.helperMissing, undef=void 0, escapeExpression=this.escapeExpression, blockHelperMissing=helpers.blockHelperMissing;
+
+function program1(depth0,data) {
+  
+  
+  data.buffer.push("\n   <input type=\"checkbox\">Click here to RSVP\n ");}
+
+function program3(depth0,data) {
+  
+  var buffer = '', stack1, stack2, stack3;
+  data.buffer.push("\n   ");
+  stack1 = depth0;
+  stack2 = "didRSVP";
+  stack3 = helpers['if'];
+  tmp1 = self.program(4, program4, data);
+  tmp1.hash = {};
+  tmp1.contexts = [];
+  tmp1.contexts.push(stack1);
+  tmp1.fn = tmp1;
+  tmp1.inverse = self.program(6, program6, data);
+  tmp1.data = data;
+  stack1 = stack3.call(depth0, stack2, tmp1);
+  if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
+  data.buffer.push("\n ");
+  return buffer;}
+function program4(depth0,data) {
+  
+  var buffer = '', stack1, stack2, stack3, stack4;
+  data.buffer.push("\n   ");
+  stack1 = depth0;
+  stack2 = "fullName";
+  stack3 = {};
+  stack4 = "true";
+  stack3['escaped'] = stack4;
+  stack4 = helpers.bind || Ember.get(depth0, "bind");;
+  tmp1 = {};
+  tmp1.hash = stack3;
+  tmp1.contexts = [];
+  tmp1.contexts.push(stack1);
+  tmp1.data = data;
+  if(typeof stack4 === functionType) { stack1 = stack4.call(depth0, stack2, tmp1); }
+  else if(stack4=== undef) { stack1 = helperMissing.call(depth0, "bind", stack2, tmp1); }
+  else { stack1 = stack4; }
+  data.buffer.push(escapeExpression(stack1) + "\n   ");
+  return buffer;}
+
+function program6(depth0,data) {
+  
+  
+  data.buffer.push("\n     No one has RSVPed yet.\n   ");}
+
+  data.buffer.push("<div class=\"editor\">\n <div class=\"invite\">You are cordially invited to the introduction of Ember.js.</div>\n <p>\n   First Name: ");
+  stack1 = depth0;
+  stack2 = "SC.TextField";
+  stack3 = {};
+  stack4 = "App.personController.firstName";
+  stack3['valueBinding'] = stack4;
+  stack4 = helpers.view || Ember.get(depth0, "view");;
+  tmp1 = {};
+  tmp1.hash = stack3;
+  tmp1.contexts = [];
+  tmp1.contexts.push(stack1);
+  tmp1.data = data;
+  if(typeof stack4 === functionType) { stack1 = stack4.call(depth0, stack2, tmp1); }
+  else if(stack4=== undef) { stack1 = helperMissing.call(depth0, "view", stack2, tmp1); }
+  else { stack1 = stack4; }
+  data.buffer.push(escapeExpression(stack1) + "\n </p>\n <p>\n   Last Name: ");
+  stack1 = depth0;
+  stack2 = "SC.TextField";
+  stack3 = {};
+  stack4 = "App.personController.lastName";
+  stack3['valueBinding'] = stack4;
+  stack4 = helpers.view || Ember.get(depth0, "view");;
+  tmp1 = {};
+  tmp1.hash = stack3;
+  tmp1.contexts = [];
+  tmp1.contexts.push(stack1);
+  tmp1.data = data;
+  if(typeof stack4 === functionType) { stack1 = stack4.call(depth0, stack2, tmp1); }
+  else if(stack4=== undef) { stack1 = helperMissing.call(depth0, "view", stack2, tmp1); }
+  else { stack1 = stack4; }
+  data.buffer.push(escapeExpression(stack1) + "\n </p>\n ");
+  stack1 = depth0;
+  stack2 = "SC.Checkbox";
+  stack3 = {};
+  stack4 = "App.personController.didRSVP";
+  stack3['valueBinding'] = stack4;
+  stack4 = helpers.view || Ember.get(depth0, "view");;
+  tmp1 = self.program(1, program1, data);
+  tmp1.hash = stack3;
+  tmp1.contexts = [];
+  tmp1.contexts.push(stack1);
+  tmp1.fn = tmp1;
+  tmp1.inverse = self.noop;
+  tmp1.data = data;
+  if(typeof stack4 === functionType) { stack1 = stack4.call(depth0, stack2, tmp1); }
+  else { stack1 = blockHelperMissing.call(depth0, stack4, stack2, tmp1); }
+  if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
+  data.buffer.push("\n</div>\n\n<div class=\"viewer\">\n <h2>Guest List</h2>\n ");
+  stack1 = depth0;
+  stack2 = "App.personController";
+  stack3 = helpers['with'];
+  tmp1 = self.program(3, program3, data);
+  tmp1.hash = {};
+  tmp1.contexts = [];
+  tmp1.contexts.push(stack1);
+  tmp1.fn = tmp1;
+  tmp1.inverse = self.noop;
+  tmp1.data = data;
+  stack1 = stack3.call(depth0, stack2, tmp1);
+  if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
+  data.buffer.push("\n</div>\n");
+  return buffer;});;
+FI"_version;
+F"%9a85664ffda4f6478209562cbe62810b
